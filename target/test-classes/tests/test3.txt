@@ -1,0 +1,14 @@
+1 2 yes
+1 2 no
+4 5 yes
+4 5 yes
+4 5 yes
+6 8 yes
+10 10 no
+10 10 yes
+1 2 no
+1 2 yes
+4 5 no
+4 5 yes
+4 5 yes
+4 5 no

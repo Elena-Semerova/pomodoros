@@ -1,4 +1,14 @@
-# pomodoros
+# Pomodoro
 
-[Product Vision](product-vision.md)
-[User Stories](user-stories.md)
+Консольный таймер pomodoro.
+
+## Сборка
+```bash
+mvn clean install
+```
+Эта команда так же запускает тесты.
+
+## Запуск
+```bash
+java -jar target/Pomodoro-1.0-SNAPSHOT.jar
+```

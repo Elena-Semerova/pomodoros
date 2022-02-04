@@ -1,0 +1,27 @@
+@startuml
+actor User
+
+User -> getConsoleCommand: set
+
+getConsoleCommand -> changeTimer: setOptimalTime / setTime
+changeTimer -> getStat: getOptimalTime
+getStat -> getStat: read
+changeTimer <- getStat: return optimal time
+
+getConsoleCommand <- changeTimer: ready
+User <- getConsoleCommand: ready
+
+User -> getConsoleCommand: run
+getConsoleCommand -> changeTimer: start work
+
+User -> getConsoleCommand: pause
+getConsoleCommand -> changeTimer: pause
+
+User -> getConsoleCommand: stop
+getConsoleCommand -> changeTimer: stop
+
+User <- getConsoleCommand: have you complited task?
+User -> getConsoleCommand: y/n
+getConsoleCommand --> getStat: update
+getStat --> getStat: save
+@enduml
